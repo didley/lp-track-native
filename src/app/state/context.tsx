@@ -22,6 +22,7 @@ export const GlobalProvider = ({ children }: { children: React.ReactNode }) => {
 // Use useContextState & useContextDispatch instead of useContext for performance optimisation is needed https://kentcdodds.com/blog/how-to-optimize-your-context-value
 export const useGlobalState = () => {
   const ctxState = useContext(GlobalCtxState);
+
   if (ctxState === undefined) {
     throw new Error("useGlobalState must be used within a GlobalProvider");
   }
