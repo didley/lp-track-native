@@ -1,4 +1,4 @@
-import { Main } from "./src/app/App";
+import { Main } from "./src/app/Main";
 import { GlobalProvider } from "./src/app/state/context";
 import React from "react";
 

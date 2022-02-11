@@ -15,8 +15,6 @@ export const reducers = (state: GlobalState, action: Action) => {
       });
     }
     case "lp/decrement": {
-      console.log("it ran");
-
       return produce(state, (draftState) => {
         if (draftState) {
           const { playerIndex } = action;
